@@ -1,0 +1,5 @@
+download and install mysql server client and xampp server
+
+put mysql username and password in includes/db.php
+
+for admin panel, in adding new product, include image path as ../assets/images/products/product1.jpg
