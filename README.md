@@ -1,67 +1,71 @@
-#Janta Kulhad – Terracotta E-Commerce & Order Management System
+# Janta Kulhad – Terracotta E-Commerce & Order Management System
 
-#Project Overview
+## Project Overview
 
 Janta Kulhad is a PHP-MySQL based web application developed for showcasing, managing, and selling eco-friendly terracotta products such as kulhads, diyas, handi pots, and catering clayware products.
 
 The platform provides:
-1. Product catalog browsing
-2. User registration & login
-3. Shopping cart management
-4. Checkout functionality
-5. Online payment integration using Razorpay
-6. Admin panel for inventory management
-7. Sales reporting
-8. Challan generation in PDF format
-9. Customer inquiry management
 
+- Product catalog browsing
+- User registration & login
+- Shopping cart management
+- Checkout functionality
+- Online payment integration using Razorpay
+- Admin panel for inventory management
+- Sales reporting
+- Challan generation in PDF format
+- Customer inquiry management
 
 The project promotes sustainable and environmentally friendly clay products while digitizing traditional pottery businesses.
 
 ---
 
-#Key Features:
+## Key Features
 
-A] Customer Features:
-1. User Registration & Login
-2. Product Browsing
-3. Product Gallery
-4. Add to Cart
-5. Checkout System
-6. Razorpay Payment Gateway Integration
-7. Contact Form
-8. Responsive UI
+### Customer Features
 
-B] Admin Features:
-1. Secure Admin Login
-2. Product Management
-3. Add New Products
-4. View Products
-5. Sales Dashboard
-6. Sales Reports
-7. Challan Generation
-8. View Generated Challans
-9. Database Seeding Utility
+- User Registration & Login
+- Product Browsing
+- Product Gallery
+- Add to Cart
+- Checkout System
+- Razorpay Payment Gateway Integration
+- Contact Form
+- Responsive UI
 
----
+### Admin Features
 
-Technology Stack
-
-A] Technology	Purpose:
-1. PHP	Backend Development
-2. MySQL	Database Management
-3. HTML5	Frontend Structure
-4. CSS3	Styling
-5. JavaScript	Client-side Functionality
-6. Razorpay API	Payment Processing
-7. FPDF	PDF Challan Generation
-8. PHPMailer	Email Services
-9. XAMPP	Local Development Environment
+- Secure Admin Login
+- Product Management
+- Add New Products
+- View Products
+- Sales Dashboard
+- Sales Reports
+- Challan Generation
+- View Generated Challans
+- Database Seeding Utility
 
 ---
 
-Project Structure
+## Technology Stack
 
+| Technology | Purpose |
+|------------|---------|
+| PHP | Backend Development |
+| MySQL | Database Management |
+| HTML5 | Frontend Structure |
+| CSS3 | Styling |
+| JavaScript | Client-side Functionality |
+| Razorpay API | Payment Processing |
+| FPDF | PDF Challan Generation |
+| PHPMailer | Email Services |
+| XAMPP | Local Development Environment |
+
+---
+
+## Project Structure
+
+```text
 Janta/
 │
 ├── admin/
@@ -101,25 +105,25 @@ Janta/
 │   └── phpmailer/
 │
 └── terracotta.sql
+```
 
 ---
 
-Product Categories
+## Product Categories
 
-The platform supports multiple terracotta product categories including:
-
-Kulhad Cups (50ml – 200ml)
-Clay Handi Pots
-Earthen Bowls
-Diyas
-Catering Clayware
-Traditional Terracotta Products
+- Kulhad Cups (50ml–200ml)
+- Clay Handi Pots
+- Earthen Bowls
+- Diyas
+- Catering Clayware
+- Traditional Terracotta Products
 
 ---
 
-Workflow
+## Workflow
 
-Customer Flow
+### Customer Flow
+
 1. Register/Login
 2. Browse Products
 3. Add Products to Cart
@@ -127,7 +131,8 @@ Customer Flow
 5. Complete Razorpay Payment
 6. Receive Order Confirmation
 
-Admin Flow
+### Admin Flow
+
 1. Login to Admin Panel
 2. Add/Edit Products
 3. Monitor Sales
@@ -136,153 +141,170 @@ Admin Flow
 
 ---
 
-Payment Integration
+## Payment Integration
 
-The project integrates Razorpay Payment Gateway for secure online transactions.
+The project integrates **Razorpay Payment Gateway** for secure online transactions.
 
-Features:
-1. Online Payments
-2. Payment Success Handling
-3. Payment Failure Handling
-4. Transaction Verification
+### Features
 
----
-
-PDF Challan Generation
-
-Using FPDF Library, administrators can:
-1. Generate Sales Challans
-2. Download Printable PDFs
-3. Maintain Transaction Records
+- Online Payments
+- Payment Success Handling
+- Payment Failure Handling
+- Transaction Verification
 
 ---
 
-Sales Management
+## PDF Challan Generation
+
+Using **FPDF Library**, administrators can:
+
+- Generate Sales Challans
+- Download Printable PDFs
+- Maintain Transaction Records
+
+---
+
+## Sales Management
 
 The Admin Dashboard provides:
-1. Product Sales Tracking
-2. Order Monitoring
-3. Sales Reports
-4. Revenue Analysis
-5. Challan Records
+
+- Product Sales Tracking
+- Order Monitoring
+- Sales Reports
+- Revenue Analysis
+- Challan Records
 
 ---
 
-Gallery Section
+## Gallery Section
 
 The gallery showcases:
-Kulhad Products
-Handmade Terracotta Items
-Clay Utensils
-Traditional Pottery Collections
+
+- Kulhad Products
+- Handmade Terracotta Items
+- Clay Utensils
+- Traditional Pottery Collections
 
 ---
 
-Installation Guide
+## Installation Guide
 
-Step 1: Install Requirements
-XAMPP Server
-MySQL Server
-PHP 7.x or Above
+### Step 1: Install Requirements
 
----
+- XAMPP Server
+- MySQL Server
+- PHP 7.x or Above
 
-Step 2: Clone Repository
+### Step 2: Clone Repository
+
+```bash
 git clone https://github.com/yourusername/janta-kulhad.git
+```
 
----
+### Step 3: Configure Database
 
-Step 3: Configure Database
-Create a database in MySQL.
-Import:
+Create a database in MySQL and import:
+
+```sql
 terracotta.sql
+```
 
----
+### Step 4: Configure Database Connection
 
-Step 4: Configure Database Connection
 Edit:
+
+```php
 config/db.php
+```
 
 Add:
+
+```php
 $host = "localhost";
 $user = "root";
 $password = "";
 $database = "terracotta";
+```
 
----
+### Step 5: Start Server
 
-Step 5: Start Server
 Start:
-Apache
-MySQL
+
+- Apache
+- MySQL
+
 using XAMPP Control Panel.
 
----
+### Step 6: Run Project
 
-Step 6: Run Project
-Open:
+```bash
 http://localhost/Janta
+```
 
 Admin Panel:
+
+```bash
 http://localhost/Janta/admin
+```
 
 ---
 
-Applications
-1. Terracotta Product Stores
-2. Pottery Businesses
-3. Handmade Product Marketplaces
-4. Sustainable Product Commerce
-5. Rural Artisan Digitization
+## Applications
+
+- Terracotta Product Stores
+- Pottery Businesses
+- Handmade Product Marketplaces
+- Sustainable Product Commerce
+- Rural Artisan Digitization
 
 ---
 
-Future Enhancements
-1. Mobile Application
-2. AI Product Recommendation System
-3. Inventory Forecasting
-4. Customer Analytics Dashboard
-5. GST Invoice Automation
-6. Multi-Vendor Marketplace
-7. WhatsApp Order Notifications
-8. Cloud Deployment
+## Future Enhancements
+
+- Mobile Application
+- AI Product Recommendation System
+- Inventory Forecasting
+- Customer Analytics Dashboard
+- GST Invoice Automation
+- Multi-Vendor Marketplace
+- WhatsApp Order Notifications
+- Cloud Deployment
 
 ---
 
-Learning Outcomes
+## Learning Outcomes
 
 This project demonstrates:
-1. Full Stack Web Development
-2. Database Management
-3. Payment Gateway Integration
-4. PDF Generation
-5. Session Management
-6. E-Commerce Architecture
-7. Admin Dashboard Development
+
+- Full Stack Web Development
+- Database Management
+- Payment Gateway Integration
+- PDF Generation
+- Session Management
+- E-Commerce Architecture
+- Admin Dashboard Development
 
 ---
 
-Author
+## Author
 
-Anish Nalekar
-MSc Computer Science
+**Anish Nalekar**  
+*MSc Computer Science*  
 Web Development Enthusiast
 
-
 ---
 
-License
+## License
 
 This project is released under the MIT License.
 
 ---
 
-Support
+## Support
 
 If you found this project useful:
 
-⭐ Star the repository
-🍴 Fork the repository
-🛠️ Contribute improvements
-📢 Share with others
-
+- ⭐ Star the repository
+- 🍴 Fork the repository
+- 🛠️ Contribute improvements
+- 📢 Share with others
